@@ -13,6 +13,10 @@ const apx = {
       id: "eng",
       nombre: "English for dev",
     },
+    {
+      id: "mod-1",
+      nombre: "Javascript for all",
+    },
   ],
 };
 
@@ -52,13 +56,13 @@ otraFunction();
 
 // -> console group y console count
 
-// console.group("lo de los pares");
+console.group("lo de los pares");
 [1, 2, 3, 4, 5, 6, 7].forEach((n) => {
   if (n % 2 == 0) {
     console.count("pares");
   }
 });
-// console.groupEnd();
+console.groupEnd();
 
 if (!apx.nuevoCurso) {
   console.error("Por ahora...");
